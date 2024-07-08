@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import { capitalizeFirstLetter } from "../../utils/helpers.js";
 import "../../App.css";
 
 // Navigation component handling dynamic title and navigation logic

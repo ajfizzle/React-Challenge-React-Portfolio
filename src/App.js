@@ -1,38 +1,53 @@
 import React, { useState } from "react";
-import Header from "../src/components/Header";
-import About from "../src/components/About";
-import Contact from "../src/components/Contact";
-import Portfolio from "./components/Work";
-import Resume from "../src/components/Resume";
-import Footer from "../src/components/Footer";
+import Header from "./components/Header/index.js";
+import About from "./components/About/index.js";
+import Contact from "./components/Contact/index.js";
+import Work from "./components/Work/index.js";
+import Resume from "./components/Resume/index.js";
+import Footer from "./components/Footer/index.js";
 import { Helmet } from "react-helmet";
 import "./App.css";
 
 function App() {
-  const [currentTab, handleTabChange] = useState("About");
+  // Initialize currentTab with an object that includes a 'name' property
+  const [currentTab, setCurrentTab] = useState({ name: "About" });
 
-  // If `currentTab` does not match any case, it defaults to rendering the 'About' component.
+  // Log initial state
+  console.log("Initial currentTab:", currentTab);
+
+  // Function to handle tab change
+  const handleTabChange = (tabName) => {
+    console.log("Changing tab from:", currentTab.name, "to:", tabName); // Log tab change
+    setCurrentTab({ name: tabName });
+  };
+
+  // Render the appropriate component based on currentTab.name
   const renderTab = () => {
-    switch (currentTab) {
+    console.log("Rendering tab:", currentTab.name); // Log which tab is being rendered
+    switch (
+      currentTab.name // Ensure you use currentTab.name to match string values
+    ) {
       case "About":
         return <About />;
       case "Contact":
         return <Contact />;
-      case "Portfolio":
-        return <Portfolio />;
+      case "Work":
+        return <Work />;
       case "Resume":
         return <Resume />;
       default:
-        return <About />; // Default to 'About' component.
+        console.log("Defaulting to About tab"); // Log default case
+        return <About />; // Default to 'About' component if no match
     }
   };
 
   return (
     <>
       <Helmet>
-        <title>Joel Azeta&apos;s Portfolio | {currentTab}</title>
+        <title>Joel Azetas Portfolio | {currentTab.name}</title>
       </Helmet>
-      <Header currentTab={currentTab} handleTabChange={handleTabChange} />
+      <Header currentTab={currentTab.name} handleTabChange={handleTabChange} />{" "}
+      {/* Pass down the name for consistency */}
       <main>{renderTab()}</main>
       <Footer />
     </>
