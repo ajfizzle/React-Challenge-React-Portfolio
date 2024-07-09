@@ -1,239 +1,242 @@
-/* global tags styling starts here */
-
 * {
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box; 
+  flex-wrap: wrap; 
+  margin: 0; 
+  padding: 0; 
+  font-size: 29px; 
 }
 
-body {
-  color: black;
+body,
+html {
+  width: 100%; 
+  margin: 0; 
+  padding: 0; 
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+    "Lucida Sans", Arial, sans-serif; 
 }
+
+a {
+  color: white; 
+  font-size: 30px; 
+  background-color: transparent; 
+  justify-content: space-around; 
+  text-decoration: none; 
+}
+
+.nav-tabs {
+  list-style-type: none;
+  margin-right: 7px; 
+  padding: 0 10px; 
+  background-color: transparent; 
+}
+
 
 section {
-  padding: 40px;
-}
+  padding: 0px; 
 
-/*global tags styling ends here */
-
-/* navbar styling starts*/
-.background {
-  /* JA portfolio header */
-  background-color: skyblue;
-}
 
 header {
-  padding: 15px 50px 15px 0;
-  background-color: #000080;
-  justify-content: space-between; /* to align the line to match btwn about me, work & contact me" */
-  display: flex;
-  flex-wrap: wrap;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 100%;
-  z-index: 9999;
+  background-color: #000080; 
+  color: white; 
+  padding: 0px 3px;
+  position: relative; 
+  top: 0; 
+  z-index: 1000; 
+
+
+.about-text {
+  font-size: 20px; 
 }
 
+
+header nav ul li a:hover {
+  color: rgb(155 200 221); 
+}
+
+/
 header h1 {
-  padding: 3px 15px 3px 70px;
+  margin: 0; 
+  font-size: 38px; 
+  color: black; 
 }
 
-header h1 a {
-  font-weight: bold;
-  font-size: 44px;
-  color: black;
-  text-decoration: none;
-}
-
-header li a {
+h2 {
+  font-size: 44px; 
+  margin: 32px; 
+  background-color: transparent; 
   color: white;
 }
 
-header nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.contact-me {
+  font-size: 20px; 
+  margin: 1px; 
+  background-color: transparent; 
+  color: black; 
 }
 
-header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  list-style: none;
-}
 
-header nav ul li {
-  padding: 0 5px 0;
-}
-
-header nav ul li a {
-  display: flex;
-  padding: 20px 3px 3px;
-  font-weight: lighter;
-  font-size: 1.25vw;
-  align-items: flex-end;
-  text-decoration: none;
-  border-bottom: 3px solid;
-  align-self: center;
-}
-
-header nav ul li a:hover {
-  color: rgb(155 200 221);
-}
-/* navbar styling ends */
-
-/* hero styling starts */
-.hero {
-  /* <- To help display hero section correctly */
-  background-image: url("../images/Image-1.png");
-  background-size: cover;
-  display: flex;
-  justify-content: right;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  background-attachment: fixed;
-  background-position: 100%;
-  height: 300px;
-}
-
-.section-hero {
-  /* To help position "create my portfolio" accurately */
-  position: relative;
-  color: black;
-  top: 150px;
-  background-color: skyblue; /*<- to remove background from "create my profolio"*/
-}
-
-/* hero styling ends */
-
-/* section styling starts */
-.section-title {
-  font-size: 40px; /* <-to increase the font size of each section within main */
-  color: black;
-  padding-bottom: 0px;
-  margin: 0 0 5px 50px;
-  flex: auto; /* to adjust spacing btwn <section-title> & <about-text> */
-  text-align: right;
-}
-
-.section-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: stretch;
-}
-
-.section-border {
-  /* determines how the sections are aligned properly */
-  border-left: 5px solid; /* To add/icrease boldness border line "|" between <section-title> & <about-text> */
-  margin: 1%;
-  padding-left: 50px;
-  padding-bottom: 20px;
-  flex: 0 0 85%; /* adjust margin between <section-title> & <about-text> */
-  left: 300px;
-}
-
-/* section styling ends */
-
-/* work section styling starts */
-.box-wrapper {
-  position: relative;
-  display: inline-flex;
-}
-
-.box-wrapper:hover {
-  color: red;
-}
-
-.secondary-box img {
-  width: 597px;
-  height: 100px;
-  object-fit: cover;
-  object-position: 100% 0.5%;
-  border: 5px solid aqua;
-}
-
-.secondary-title {
-  padding: 10px;
-  background-color: rgb(41, 27, 241);
-  font-size: 13px;
-  position: absolute;
-  line-height: 1.5;
-  transform: translate(0%, -140%);
-  margin: auto 5px auto 5px;
-}
-
-.secondary-box-one img {
-  width: 1198px;
-  height: 450px;
-  object-fit: cover;
-  object-position: 100% 0.5%;
-  border: 5px solid aqua;
-}
-
-/* .section-border {
-  border-left: 4px solid;
-  margin: 0px 50px 20px 20px;
-  padding-left: 50px;
-  padding-bottom: 20px;
-  flex: 0 0 75%;
-  left: 300px;
-  
-} */
-
-/* work section styling ends */
-
-/* contact me styling starts */
 .nav {
-  text-align: justify;
-  text-decoration: none;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-bottom: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.nav address a {
-  padding: 5px;
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-  font-size: 20px;
-  border-bottom: 3px solid;
-  line-height: 1.5;
+  text-align: justify; 
+  text-decoration: none; 
+  padding-bottom: 7px; 
+  margin-bottom: 4px; 
+  display: flex; 
+  justify-content: flex-end; 
 }
 
 .nav address a:hover {
-  color: blue;
+  color: blue; 
 }
 
-/* contact me styling ends */
-
-/* footer styling starts */
-footer {
-  display: none;
-  text-align: none;
-  align-self: baseline;
+.contact-section {
+  background: #f9f9f9;
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 20px; 
+  max-width: 600px; 
+  margin: auto; 
 }
-/* footer styling ends */
 
-/* Media styling */
+.section-container {
+  width: 100%; 
+  max-width: 969px; 
+  padding: 20px; 
+  background: #f9f9f9; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  background-color: #f4f4f4; 
+}
+
+textarea {
+  height: 340px; 
+  width: 1670px; 
+}
+
+
+.form-group input,
+.form-group textarea {
+  width: 100%; 
+  border: 1px solid #ccc; 
+  border-radius: 14px; 
+  margin-bottom: 8px; 
+}
+
+
+.form-group label {
+  display: block; 
+  margin-bottom: 5px; 
+  color: #333; 
+}
+
+.button {
+  width: 100%; 
+  background-color: #007bff; 
+  color: white; 
+  padding: 10px; 
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red; 
+  padding: 5px 0
+}
+
+.nav address a {
+  display: block; 
+  margin-top: 5px; /
+  background-color: transparent; 
+}
+
+.nav-item {
+  padding-right: 20px; 
+}
+
+.hero {
+  background-image: url("../src/assets/bgdisplay/Image-1.png"); /
+  background-size: cover; 
+  height: 300px; 
+  display: flex; 
+  align-items: flex-end; 
+  color: white; /
+}
+
+.box-wrapper {
+  display: flex; 
+  flex-wrap: wrap; /
+  flex-direction: column; 
+  justify-content: space-around; 
+  align-items: stretch;
+  padding: 20px; 
+  padding-left: 50px; 
+}
+
+.section-container {
+  max-width: none; 
+  margin: auto; 
+  padding: 20px; 
+  background: #f9f9f9;
+  border-radius: 8px; 
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); 
+  padding-left: 10px; 
+}
+
+.footer-section h1 {
+  font-size: 15px; 
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center; 
+  align-items: baseline; 
+}
+
+.resume-body {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 12px; 
+  padding: 10px; 
+}
+
+.column-title {
+  font-size: 20px; 
+  color: #333;
+  margin-bottom: 10px; 
+}
+
+/
+.column-text ul {
+  list-style-type: none; 
+  padding: 0; /
+}
+
+.column-text li {
+  margin-bottom: 8px; 
+  font-size: 16px; 
+  list-style-type: none; 
+}
+
+
+.column-text .logo {
+  margin-right: 5px; 
+  color: #4caf50;
+}
+
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
+    padding: 7px; 
+    padding-left: 10px; 
   }
 
-  main {
-    max-width: 1200px;
+
+@media (max-width: 600px) {
+  .form-group {
+    width: 100%; 
   }
 }
