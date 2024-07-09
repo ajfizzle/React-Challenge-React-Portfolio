@@ -1,42 +1,239 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* global tags styling starts here */
+
+* {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+section {
+  padding: 40px;
+}
+
+/*global tags styling ends here */
+
+/* navbar styling starts*/
+.background {
+  /* JA portfolio header */
+  background-color: skyblue;
+}
+
+header {
+  padding: 15px 50px 15px 0;
+  background-color: #000080;
+  justify-content: space-between; /* to align the line to match btwn about me, work & contact me" */
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 100%;
+  z-index: 9999;
+}
+
+header h1 {
+  padding: 3px 15px 3px 70px;
+}
+
+header h1 a {
+  font-weight: bold;
+  font-size: 44px;
+  color: black;
+  text-decoration: none;
+}
+
+header li a {
+  color: white;
+}
+
+header nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  padding: 0 5px 0;
+}
+
+header nav ul li a {
+  display: flex;
+  padding: 20px 3px 3px;
+  font-weight: lighter;
+  font-size: 1.25vw;
+  align-items: flex-end;
+  text-decoration: none;
+  border-bottom: 3px solid;
+  align-self: center;
+}
+
+header nav ul li a:hover {
+  color: rgb(155 200 221);
+}
+/* navbar styling ends */
+
+/* hero styling starts */
+.hero {
+  /* <- To help display hero section correctly */
+  background-image: url("../images/Image-1.png");
+  background-size: cover;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 100%;
+  height: 300px;
+}
+
+.section-hero {
+  /* To help position "create my portfolio" accurately */
+  position: relative;
+  color: black;
+  top: 150px;
+  background-color: skyblue; /*<- to remove background from "create my profolio"*/
+}
+
+/* hero styling ends */
+
+/* section styling starts */
+.section-title {
+  font-size: 40px; /* <-to increase the font size of each section within main */
+  color: black;
+  padding-bottom: 0px;
+  margin: 0 0 5px 50px;
+  flex: auto; /* to adjust spacing btwn <section-title> & <about-text> */
+  text-align: right;
+}
+
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.section-border {
+  /* determines how the sections are aligned properly */
+  border-left: 5px solid; /* To add/icrease boldness border line "|" between <section-title> & <about-text> */
+  margin: 1%;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  flex: 0 0 85%; /* adjust margin between <section-title> & <about-text> */
+  left: 300px;
+}
+
+/* section styling ends */
+
+/* work section styling starts */
+.box-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.box-wrapper:hover {
+  color: red;
+}
+
+.secondary-box img {
+  width: 597px;
+  height: 100px;
+  object-fit: cover;
+  object-position: 100% 0.5%;
+  border: 5px solid aqua;
+}
+
+.secondary-title {
+  padding: 10px;
+  background-color: rgb(41, 27, 241);
+  font-size: 13px;
+  position: absolute;
+  line-height: 1.5;
+  transform: translate(0%, -140%);
+  margin: auto 5px auto 5px;
+}
+
+.secondary-box-one img {
+  width: 1198px;
+  height: 450px;
+  object-fit: cover;
+  object-position: 100% 0.5%;
+  border: 5px solid aqua;
+}
+
+/* .section-border {
+  border-left: 4px solid;
+  margin: 0px 50px 20px 20px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  flex: 0 0 75%;
+  left: 300px;
+  
+} */
+
+/* work section styling ends */
+
+/* contact me styling starts */
+.nav {
+  text-align: justify;
+  text-decoration: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav address a {
+  padding: 5px;
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+  font-size: 20px;
+  border-bottom: 3px solid;
+  line-height: 1.5;
+}
+
+.nav address a:hover {
+  color: blue;
+}
+
+/* contact me styling ends */
+
+/* footer styling starts */
+footer {
+  display: none;
+  text-align: none;
+  align-self: baseline;
+}
+/* footer styling ends */
+
+/* Media styling */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  main {
+    max-width: 1200px;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
