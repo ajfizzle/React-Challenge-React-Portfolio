@@ -1,242 +1,469 @@
+/* Reset styles */
 * {
-  box-sizing: border-box; 
-  flex-wrap: wrap; 
-  margin: 0; 
-  padding: 0; 
-  font-size: 29px; 
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  flex-wrap: wrap; /* Allow flex items to wrap */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-size: 29px; /* Set default font size */
 }
 
+/* Body and HTML styles */
 body,
 html {
-  width: 100%; 
-  margin: 0; 
-  padding: 0; 
+  width: 100%; /* Full width for body and html */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif; 
+    "Lucida Sans", Arial, sans-serif; /* Set default font family */
 }
 
+/* Anchor (link) styles */
 a {
-  color: white; 
-  font-size: 30px; 
-  background-color: transparent; 
-  justify-content: space-around; 
-  text-decoration: none; 
+  color: white; /* Link color */
+  font-size: 40px; /* Font size for links */
+  background-color: transparent; /* Transparent background */
+  justify-content: space-around; /* Space around the links */
+  text-decoration: none; /* Removes underline from links */
 }
 
+/* Navigation tabs styles */
 .nav-tabs {
-  list-style-type: none;
-  margin-right: 7px; 
-  padding: 0 10px; 
-  background-color: transparent; 
+  list-style-type: none; /* Removes the bullet or any marker */
+  margin-right: 7px; /* Margin to the right */
+  padding: 0 10px; /* Adds padding to the left and right of each link */
+  background-color: transparent; /* Transparent background */
 }
 
-
+/* Section styles */
 section {
-  padding: 0px; 
+  padding: 0px; /* No padding for sections */
+}
 
-
+/* Header styles */
 header {
-  background-color: #000080; 
-  color: white; 
-  padding: 0px 3px;
-  position: relative; 
-  top: 0; 
-  z-index: 1000; 
+  background-color: #000080; /* Navy background color */
+  color: white; /* White text color */
+  padding: 0px 3px; /* Padding for header */
+  position: relative; /* Position relative */
+  top: 0; /* Align to top */
+  z-index: 1000; /* Ensure header stays on top */
+}
 
-
+/* About text styles */
 .about-text {
-  font-size: 20px; 
+  font-size: 20px; /* Font size for about text */
 }
 
-
+/* Header link hover styles */
 header nav ul li a:hover {
-  color: rgb(155 200 221); 
+  color: rgb(155 200 221); /* Hover color for links */
 }
 
-/
+/* Header h1 styles */
 header h1 {
-  margin: 0; 
-  font-size: 38px; 
-  color: black; 
+  margin: 0; /* Remove default margin */
+  font-size: 38px; /* Font size for header */
+  color: black; /* Black text color */
 }
 
+/* Heading 2 styles */
 h2 {
-  font-size: 44px; 
-  margin: 32px; 
-  background-color: transparent; 
-  color: white;
+  font-size: 44px; /* Font size for h2 */
+  margin: 32px; /* Margin for h2 */
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text color */
 }
 
+/* Contact me styles */
 .contact-me {
-  font-size: 20px; 
-  margin: 1px; 
-  background-color: transparent; 
-  color: black; 
+  font-size: 20px; /* Font size for contact-me */
+  margin: 1px; /* Margin for contact-me */
+  background-color: transparent; /* Transparent background */
+  color: black; /* Black text color */
 }
 
-
+/* Navigation styles */
 .nav {
-  text-align: justify; 
-  text-decoration: none; 
-  padding-bottom: 7px; 
-  margin-bottom: 4px; 
-  display: flex; 
-  justify-content: flex-end; 
+  text-align: justify; /* Justify text alignment */
+  text-decoration: none; /* No text decoration */
+  padding-bottom: 2px; /* Padding at the bottom */
+  margin-bottom: 4px; /* Margin at the bottom */
+  display: flex; /* Flexbox display */
+  justify-content: flex-end; /* Align items to the end */
 }
 
-.nav address a:hover {
-  color: blue; 
+/* Navigation link styles */
+a.nav-link {
+  color: white; /* Link color */
+  font-size: 20px; /* Font size */
+  background-color: transparent; /* Transparent background */
+  text-decoration: underline; /* Underline text */
+  padding: 1px 0px; /* Padding for links */
 }
-
-.contact-section {
-  background: #f9f9f9;
-  border-radius: 8px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  padding: 20px; 
-  max-width: 600px; 
-  margin: auto; 
-}
-
-.section-container {
-  width: 100%; 
-  max-width: 969px; 
-  padding: 20px; 
-  background: #f9f9f9; 
-  border-radius: 8px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-  background-color: #f4f4f4; 
-}
-
-textarea {
-  height: 340px; 
-  width: 1670px; 
-}
-
-
-.form-group input,
-.form-group textarea {
-  width: 100%; 
-  border: 1px solid #ccc; 
-  border-radius: 14px; 
-  margin-bottom: 8px; 
-}
-
-
-.form-group label {
-  display: block; 
-  margin-bottom: 5px; 
-  color: #333; 
-}
-
-.button {
-  width: 100%; 
-  background-color: #007bff; 
-  color: white; 
-  padding: 10px; 
-  border-radius: 5px;
-  cursor: pointer; 
-}
-
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Hover color */
 }
 
-.error-message {
-  color: red; 
-  padding: 5px 0
+/* Contact section styles */
+.contact-section {
+  background: #f9f9f9; /* Background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for contact section */
+  padding: 20px; /* Padding for contact section */
+  max-width: 600px; /* Maximum width */
+  margin: auto; /* Center horizontally */
 }
 
-.nav address a {
-  display: block; 
-  margin-top: 5px; /
-  background-color: transparent; 
-}
-
-.nav-item {
-  padding-right: 20px; 
-}
-
-.hero {
-  background-image: url("../src/assets/bgdisplay/Image-1.png"); /
-  background-size: cover; 
-  height: 300px; 
-  display: flex; 
-  align-items: flex-end; 
-  color: white; /
-}
-
-.box-wrapper {
-  display: flex; 
-  flex-wrap: wrap; /
-  flex-direction: column; 
-  justify-content: space-around; 
-  align-items: stretch;
-  padding: 20px; 
-  padding-left: 50px; 
-}
-
+/* Section container styles */
 .section-container {
-  max-width: none; 
-  margin: auto; 
-  padding: 20px; 
-  background: #f9f9f9;
-  border-radius: 8px; 
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); 
-  padding-left: 10px; 
+  width: 100%; /* Full width */
+  max-width: none; /* Remove max-width */
+  margin: auto; /* Center horizontally */
+  padding: 20px; /* Padding */
+  background: #f9f9f9; /* Background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Shadow */
+  padding-left: 10px; /* Padding to the left */
 }
 
+/* Textarea styles */
+textarea {
+  height: 340px; /* Height for textarea */
+  width: 1670px; /* Width for textarea */
+}
+
+/* Form group styles */
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Full width */
+  padding: 0px; /* No padding */
+  border: 1px solid #ccc; /* Border for form elements */
+  border-radius: 14px; /* Rounded corners */
+  margin-bottom: 8px; /* Margin at the bottom */
+}
+
+/* Form group label styles */
+.form-group label {
+  display: block; /* Display block */
+  margin-bottom: 5px; /* Margin at the bottom */
+  color: #333; /* Text color */
+}
+
+/* Button styles */
+.button {
+  width: 100%; /* Full width */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Button hover styles */
+.button:hover {
+  background-color: #0056b3; /* Hover color for button */
+}
+
+/* Error message styles */
+.error-message {
+  color: red; /* Text color for error messages */
+  padding: 5px 0; /* Padding for error messages */
+}
+
+/* Navigation address link styles */
+.nav address a {
+  display: block; /* Display block */
+  margin-top: 5px; /* Margin at the top */
+  background-color: transparent; /* Transparent background */
+  padding: 5px; /* Padding for address links */
+  text-decoration: none; /* No text decoration */
+  font-style: normal; /* Normal font style */
+  color: black; /* Link color */
+  font-size: 20px; /* Font size */
+  line-height: 1.5; /* Line height */
+}
+
+/* Navigation address link hover styles */
+.nav address a:hover {
+  color: blue; /* Hover color for address links */
+}
+
+/* Navigation item styles */
+.nav-item {
+  padding-right: 20px; /* Padding to the right */
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url("../src/assets/bgdisplay/Image-1.png"); /* Background image */
+  background-size: cover; /* Cover background */
+  height: 300px; /* Height */
+  display: flex; /* Flexbox display */
+  justify-content: end; /* Align items to the end */
+  align-items: flex-end; /* Align items to the end */
+  color: white; /* Text color */
+}
+
+/* Box wrapper styles */
+.box-wrapper {
+  display: flex; /* Flexbox display */
+  flex-wrap: wrap; /* Allow items to wrap */
+  flex-direction: column; /* Column direction */
+  justify-content: space-around; /* Space around items */
+  align-items: stretch; /* Stretch items */
+  width: 100%; /* Full width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Padding */
+  padding-left: 50px; /* Padding to the left */
+}
+
+/* Secondary box styles */
+.secondary-box {
+  border: 1px solid #ccc; /* Border */
+  padding: 20px; /* Padding */
+  margin-bottom: 20px; /* Margin at the bottom */
+}
+
+/* Secondary box image styles */
+.secondary-box img {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Margin at the bottom */
+}
+
+/* Secondary title styles */
+.secondary-title h3 {
+  margin-top: 0.5em; /* Margin at the top */
+  font-size: 24px; /* Font size */
+}
+
+/* Secondary title paragraph styles */
+.secondary-title p {
+  font-size: 16px; /* Font size */
+  color: #333; /* Text color */
+}
+
+/* Section title and download link styles */
+.section-title,
+.download-link {
+  margin-top: 0px; /* Margin at the top */
+  padding-top: 0px; /* Padding at the top */
+  background-color: transparent; /* Transparent background */
+  color: black; /* Text color */
+  padding-top: 8vh;
+}
+
+/* Section border styles */
+.section-border {
+  padding-left: 0; /* No padding to the left */
+  border-left: none; /* No border to the left */
+}
+
+/* Section border styles (duplicate) */
+.section-border {
+  margin: 1%; /* Margin */
+  padding-left: 50px; /* Padding to the left */
+  padding-bottom: 20px; /* Padding at the bottom */
+  flex: 0 0 85%; /* Flex properties */
+  left: 300px; /* Position from the left */
+}
+
+/* Work header styles */
+.work-header {
+  margin-top: 0; /* No margin at the top */
+  padding-top: 0; /* No padding at the top */
+  align-self: flex-start; /* Align self to the start */
+}
+
+/* Work section styles */
+.work {
+  background-color: transparent; /* Transparent background */
+}
+
+/* Welcome section and paragraph styles */
+.welcome-section,
+p {
+  background-color: transparent; /* Transparent background */
+  margin: 21px; /* Margin */
+  padding: 0px; /* No padding */
+  margin-left: 60px;
+}
+
+/* Nested section container styles */
+.welcome-section .section-container {
+  display: flex; /* Flexbox display */
+  flex-direction: column; /* Column direction */
+  align-items: flex-start; /* Align items to the start */
+  padding: 20px; /* Padding */
+}
+
+/* Nested section title styles */
+.welcome-section .section-title {
+  font-size: 32px; /* Font size */
+  position: relative; /* Relative position */
+  padding-left: 20px; /* Padding to the left */
+  margin-bottom: 20px; /* Margin at the bottom */
+}
+
+/* Section title before pseudo-element styles */
+.welcome-section .section-title::before {
+  content: ""; /* Content before */
+  position: absolute; /* Absolute position */
+  left: 0; /* Position from the left */
+  top: 0; /* Position from the top */
+  bottom: 0; /* Position from the bottom */
+  width: 5px; /* Width */
+  background-color: black; /* Background color */
+}
+
+/* Contact details styles */
+.contact-details {
+  display: flex; /* Flexbox display */
+  justify-content: space-around; /* Space around items */
+  width: 100%; /* Full width */
+  margin-top: 20px; /* Margin at the top */
+  margin-bottom: 20px; /* Margin at the bottom */
+}
+
+/* Contact details address styles */
+.contact-details address {
+  margin-right: 20px; /* Margin to the right */
+}
+
+/* Contact details address link styles */
+.contact-details address a {
+  text-decoration: none; /* No text decoration */
+  color: black; /* Link color */
+  font-size: 20px; /* Font size */
+  border-bottom: 2px solid transparent; /* Transparent border bottom */
+}
+
+/* Contact details address link hover styles */
+.contact-details address a:hover {
+  border-bottom: 2px solid black; /* Border bottom on hover */
+}
+
+/* Form group styles (nested) */
+.contact-details .form-group {
+  width: 100%; /* Full width */
+}
+
+/* Form group input and textarea styles (nested) */
+.contact-details .form-group input,
+.contact-details .form-group textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding */
+  margin-bottom: 10px; /* Margin at the bottom */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ccc; /* Border */
+}
+
+/* Form group label styles (nested) */
+.contact-details .form-group label {
+  margin-bottom: 5px; /* Margin at the bottom */
+}
+
+/* Button styles (nested) */
+.contact-details .button {
+  width: 100%; /* Full width */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Button hover styles (nested) */
+.contact-details .download-link .button:hover {
+  background-color: #0056b3; /* Hover color */
+}
+
+/* Error message styles (nested) */
+.contact-details .error-message {
+  color: red; /* Error message color */
+  padding: 5px 0; /* Padding */
+}
+
+/* Footer section styles */
 .footer-section h1 {
-  font-size: 15px; 
+  font-size: 15px; /* Font size */
 }
 
+/* Footer section container styles */
 .footer-section {
-  display: flex;
-  justify-content: center; 
-  align-items: baseline; 
+  display: flex; /* Flexbox display */
+  justify-content: center; /* Center content horizontally */
+  align-items: baseline; /* Align items along the baseline */
 }
 
+/* Resume body grid styles */
 .resume-body {
-  display: grid; 
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 12px; 
-  padding: 10px; 
+  display: grid; /* Grid display */
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Gap between columns */
+  padding: 20px; /* Padding around the grid */
+  margin: 20px; /* Center horizontally */
+  justify-items: center; /* Center items horizontally */
 }
 
+/* Download link styles */
+.download-link {
+  color: black; /* Link color */
+  text-decoration: none; /* No text decoration */
+}
+
+/* Article styles */
+.article {
+  color: black; /* Text color */
+  background-color: white; /* Background color */
+  padding: 10px; /* Padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Column title styles */
 .column-title {
-  font-size: 20px; 
-  color: #333;
-  margin-bottom: 10px; 
+  font-size: 24px; /* Font size */
+  color: #333; /* Text color */
+  margin-bottom: 10px; /* Margin at the bottom */
 }
 
-/
+/* Column text unordered list styles */
 .column-text ul {
-  list-style-type: none; 
-  padding: 0; /
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* No padding */
 }
 
+/* Column text list item styles */
 .column-text li {
-  margin-bottom: 8px; 
-  font-size: 16px; 
-  list-style-type: none; 
+  margin-bottom: 5px; /* Margin at the bottom */
+  font-size: 16px; /* Font size */
+  list-style-type: none; /* Remove bullet points */
 }
 
-
+/* Column text logo styles */
 .column-text .logo {
-  margin-right: 5px; 
-  color: #4caf50;
+  margin-right: 5px; /* Margin to the right */
+  color: #4caf50; /* Icon color */
 }
 
+/* Media query for screen sizes up to 768px */
 @media screen and (max-width: 768px) {
   header {
-    flex-direction: column;
-    padding: 7px; 
-    padding-left: 10px; 
+    flex-direction: column; /* Column direction */
+    padding: 15px; /* Padding */
+    padding-left: 10px; /* Padding to the left */
   }
+  .section-title {
+    margin-top: -10px; /* Adjust margin at the top */
+  }
+}
 
-
+/* Media query for screen sizes up to 600px */
 @media (max-width: 600px) {
   .form-group {
-    width: 100%; 
+    width: 100%; /* Full width */
   }
 }
