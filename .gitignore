@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# exclude node_modules directory
+node_modules/
+
+# exclude .env file
+.env
