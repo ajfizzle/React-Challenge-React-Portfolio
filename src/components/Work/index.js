@@ -1,4 +1,5 @@
 import React from "react";
+import plantCareImage from "../../assets/bootcamp/plantcareapp.png";
 import cuisineCompassImage from "../../assets/bootcamp/Cuisine-compass.png";
 import employeePayrollTrackerImage from "../../assets/bootcamp/employeePayrollTracker.png";
 import weatherDashboardImage from "../../assets/bootcamp/Weather-Dashboard.png";
@@ -7,10 +8,18 @@ import myFirstBlogImage from "../../assets/bootcamp/first-blog.png";
 function Work() {
   const projects = [
     {
+      title: "Plant Care",
+      imageUrl: plantCareImage,
+      description:
+        "Plant Care is a user-friendly web application designed to help plant enthusiasts manage their plant collection with ease. Built using the MERN stack, this single-page application allows users to create and log in to their accounts, explore a wide variety of plants, and save their favorites. With personalized care schedules, Plant Care ensures that users never miss a watering, feeding, or pruning session, making plant care simple and stress-free.",
+      imageUrl: plantCareImageImage,
+      link: "https://github.com/ajfizzle/Plant-Care-Group-Project",
+    },
+    {
       title: "Cuisine Compass",
+      imageUrl: cuisineCompassImage,
       description:
         "Cuisine Compass is an innovative MERN stack application designed to connect food enthusiasts with a wide array of culinary experiences. It features user authentication, personalized recommendations based on user preferences, and interactive maps to explore local eateries. The platform facilitates live Q&A sessions with culinary experts and enables optional donations to support local businesses.",
-      imageUrl: cuisineCompassImage,
       link: "https://github.com/ajfizzle/Cuisine-Compass-Group-Project",
     },
     {
@@ -20,7 +29,6 @@ function Work() {
         "Employee Payroll Tracker is a robust web application designed to streamline the management of employee salaries and working hours for businesses of all sizes. Utilizing technologies like Node.js and MongoDB, this tool allows employers to effortlessly input, update, and track payroll data in real-time. Features include automatic calculations of wages based on hourly rates, generation of comprehensive payroll reports, and the ability to handle adjustments for overtime and deductions. This application ensures accuracy and efficiency in payroll management, making it an essential tool for HR departments.",
       link: "https://ajfizzle.github.io/employee-payroll-tracker/",
     },
-
     {
       title: "Weather Dashboard",
       imageUrl: weatherDashboardImage,
