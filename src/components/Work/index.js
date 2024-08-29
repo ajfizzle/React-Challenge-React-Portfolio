@@ -12,7 +12,6 @@ function Work() {
       imageUrl: plantCareImage,
       description:
         "Plant Care is a user-friendly web application designed to help plant enthusiasts manage their plant collection with ease. Built using the MERN stack, this single-page application allows users to create and log in to their accounts, explore a wide variety of plants, and save their favorites. With personalized care schedules, Plant Care ensures that users never miss a watering, feeding, or pruning session, making plant care simple and stress-free.",
-      imageUrl: plantCareImageImage,
       link: "https://github.com/ajfizzle/Plant-Care-Group-Project",
     },
     {
