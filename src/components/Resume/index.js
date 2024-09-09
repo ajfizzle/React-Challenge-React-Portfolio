@@ -14,7 +14,7 @@ function Resume() {
         <h2 className="section-title primary-border">
           <a
             href={myResume}
-            download="Isikhuemwen Joel Azeta - Resume .pdf"
+            download="Isikhuemwen Joel Azeta.pdf"
             className="download-link"
           >
             My Resume <GrDownload />
