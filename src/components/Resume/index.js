@@ -5,7 +5,7 @@ import {
   GrDocumentPerformance,
   GrDownload,
 } from "react-icons/gr";
-import myResume from "../../assets/files/Isikhuemwen Joel Azeta - Resume .pdf"; // Ensure the path is correct
+import myResume from "../../assets/files/Isikhuemwen Joel Azeta.pdf";
 
 function Resume() {
   return (
