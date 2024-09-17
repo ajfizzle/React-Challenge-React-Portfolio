@@ -1,25 +1,19 @@
 import React from "react";
-import plantCareImage from "../../assets/bootcamp/plantcareapp.png";
-import cuisineCompassImage from "../../assets/bootcamp/Cuisine-compass.png";
-import employeePayrollTrackerImage from "../../assets/bootcamp/employeePayrollTracker.png";
-import weatherDashboardImage from "../../assets/bootcamp/Weather-Dashboard.png";
+import textEditorImage from "../../assets/bootcamp/texteditor-pwa.png";
+import employeePayrollTrackerImage from "../../assets/bootcamp/employeepayrolltracker.png";
+import weatherDashboardImage from "../../assets/bootcamp/weather-dashboard.png";
 import myFirstBlogImage from "../../assets/bootcamp/first-blog.png";
+import plantCareImage from "../../assets/bootcamp/plantcare-app.png";
+import cuisineCompassImage from "../../assets/bootcamp/cuisine-compass.png";
 
 function Work() {
   const projects = [
     {
-      title: "Plant Care",
-      imageUrl: plantCareImage,
+      title: "Text Editor PWA",
+      imageUrl: textEditorImage,
       description:
-        "Plant Care is a user-friendly web application designed to help plant enthusiasts manage their plant collection with ease. Built using the MERN stack, this single-page application allows users to create and log in to their accounts, explore a wide variety of plants, and save their favorites. With personalized care schedules, Plant Care ensures that users never miss a watering, feeding, or pruning session, making plant care simple and stress-free.",
-      link: "https://github.com/ajfizzle/Plant-Care-Group-Project",
-    },
-    {
-      title: "Cuisine Compass",
-      imageUrl: cuisineCompassImage,
-      description:
-        "Cuisine Compass is an innovative MERN stack application designed to connect food enthusiasts with a wide array of culinary experiences. It features user authentication, personalized recommendations based on user preferences, and interactive maps to explore local eateries. The platform facilitates live Q&A sessions with culinary experts and enables optional donations to support local businesses.",
-      link: "https://github.com/ajfizzle/Cuisine-Compass-Group-Project",
+        "Text Editor PWA is a progressive web application that allows users to create, edit, and save text documents online. This tool is designed to be fast, reliable, and user-friendly, offering a seamless writing experience across devices. With features like offline access, automatic saving, and customizable themes, Text Editor PWA is the perfect solution for writers, students, and professionals who need a versatile text editor on the go.",
+      link: "https://github.com/ajfizzle/Progressive-Web-Applications-Challenge-Text-Editor",
     },
     {
       title: "Employee Payroll Tracker",
@@ -41,6 +35,20 @@ function Work() {
       description:
         "My First Blog is a personal blogging platform where users can express their thoughts, share insights, and engage with a broader online community. Developed using HTML, CSS, and JavaScript, it features a simple yet powerful editor for writing articles, a comment section for reader interactions, and robust security features to ensure a safe sharing environment.",
       link: "https://ajfizzle.github.io/Web-APIs-Challenge-Personal-Blog",
+    },
+    {
+      title: "Plant Care - Group Project",
+      imageUrl: plantCareImage,
+      description:
+        "Plant Care is a user-friendly web application designed to help plant enthusiasts manage their plant collection with ease. Built using the MERN stack, this single-page application allows users to create and log in to their accounts, explore a wide variety of plants, and save their favorites. With personalized care schedules, Plant Care ensures that users never miss a watering, feeding, or pruning session, making plant care simple and stress-free.",
+      link: "https://github.com/ajfizzle/Plant-Care-Group-Project",
+    },
+    {
+      title: "Cuisine Compass - Group Project",
+      imageUrl: cuisineCompassImage,
+      description:
+        "Cuisine Compass is an innovative MERN stack application designed to connect food enthusiasts with a wide array of culinary experiences. It features user authentication, personalized recommendations based on user preferences, and interactive maps to explore local eateries. The platform facilitates live Q&A sessions with culinary experts and enables optional donations to support local businesses.",
+      link: "https://github.com/ajfizzle/Cuisine-Compass-Group-Project",
     },
   ];
 
