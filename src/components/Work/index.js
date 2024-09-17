@@ -1,6 +1,6 @@
 import React from "react";
 import textEditorImage from "../../assets/bootcamp/texteditor-pwa.png";
-import employeePayrollTrackerImage from "../../assets/bootcamp/employeepayrolltracker.png";
+import employeePayrollTrackerImage from "../../assets/bootcamp/employee-payroll-tracker.png";
 import weatherDashboardImage from "../../assets/bootcamp/weather-dashboard.png";
 import myFirstBlogImage from "../../assets/bootcamp/first-blog.png";
 import plantCareImage from "../../assets/bootcamp/plantcare-app.png";
@@ -13,7 +13,7 @@ function Work() {
       imageUrl: textEditorImage,
       description:
         "Text Editor PWA is a progressive web application that allows users to create, edit, and save text documents online. This tool is designed to be fast, reliable, and user-friendly, offering a seamless writing experience across devices. With features like offline access, automatic saving, and customizable themes, Text Editor PWA is the perfect solution for writers, students, and professionals who need a versatile text editor on the go.",
-      link: "https://github.com/ajfizzle/Progressive-Web-Applications-Challenge-Text-Editor",
+      link: "https://progressive-web-applications-challenge.onrender.com/",
     },
     {
       title: "Employee Payroll Tracker",
