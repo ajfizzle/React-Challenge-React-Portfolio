@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.d5043d9d.css",
-    "main.js": "/static/js/main.f4eae102.js",
+    "main.js": "/static/js/main.1c86bfb1.js",
     "static/js/488.04f05622.chunk.js": "/static/js/488.04f05622.chunk.js",
     "static/media/weatherdashboard-app.png": "/static/media/weatherdashboard-app.16cee2c9d9acdd21d068.png",
     "static/media/plantcare-app.png": "/static/media/plantcare-app.8a63730cf0f660058669.png",
-    "static/media/cuisine-compass.png": "/static/media/cuisine-compass.930ce4e45a49b8cfb6e4.png",
     "static/media/Image-1.png": "/static/media/Image-1.2e7f9351936d1a0327ef.png",
     "static/media/Isikhuemwen Joel Azeta.pdf": "/static/media/Isikhuemwen Joel Azeta.75f8da6c976d4486a171.pdf",
     "static/media/texteditor-pwa.png": "/static/media/texteditor-pwa.9c100a19db6b774f1d90.png",
@@ -13,11 +12,11 @@
     "static/media/employee-payroll-tracker.png": "/static/media/employee-payroll-tracker.69437a14f42cffe5bac9.png",
     "index.html": "/index.html",
     "main.d5043d9d.css.map": "/static/css/main.d5043d9d.css.map",
-    "main.f4eae102.js.map": "/static/js/main.f4eae102.js.map",
+    "main.1c86bfb1.js.map": "/static/js/main.1c86bfb1.js.map",
     "488.04f05622.chunk.js.map": "/static/js/488.04f05622.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5043d9d.css",
-    "static/js/main.f4eae102.js"
+    "static/js/main.1c86bfb1.js"
   ]
 }

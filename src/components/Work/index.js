@@ -4,7 +4,7 @@ import employeePayrollTrackerImage from "../../assets/bootcamp/employee-payroll-
 import weatherDashboardImage from "../../assets/bootcamp/weatherdashboard-app.png";
 import myFirstBlogImage from "../../assets/bootcamp/first-blog.png";
 import plantCareImage from "../../assets/bootcamp/plantcare-app.png";
-import cuisineCompassImage from "../../assets/bootcamp/cuisine-compass.png";
+// import cuisineCompassImage from "../../assets/bootcamp/cuisine-compass.png";
 
 function Work() {
   const projects = [
@@ -43,13 +43,13 @@ function Work() {
         "Plant Care is a user-friendly web application designed to help plant enthusiasts manage their plant collection with ease. Built using the MERN stack, this single-page application allows users to create and log in to their accounts, explore a wide variety of plants, and save their favorites. With personalized care schedules, Plant Care ensures that users never miss a watering, feeding, or pruning session, making plant care simple and stress-free.",
       link: "https://github.com/ajfizzle/Plant-Care-Group-Project",
     },
-    {
-      title: "Cuisine Compass - Group Project",
-      imageUrl: cuisineCompassImage,
-      description:
-        "Cuisine Compass is an innovative MERN stack application designed to connect food enthusiasts with a wide array of culinary experiences. It features user authentication, personalized recommendations based on user preferences, and interactive maps to explore local eateries. The platform facilitates live Q&A sessions with culinary experts and enables optional donations to support local businesses.",
-      link: "https://github.com/ajfizzle/Cuisine-Compass-Group-Project",
-    },
+    // {
+    //   title: "Cuisine Compass - Group Project",
+    //   imageUrl: cuisineCompassImage,
+    //   description:
+    //     "Cuisine Compass is an innovative MERN stack application designed to connect food enthusiasts with a wide array of culinary experiences. It features user authentication, personalized recommendations based on user preferences, and interactive maps to explore local eateries. The platform facilitates live Q&A sessions with culinary experts and enables optional donations to support local businesses.",
+    //   link: "https://github.com/ajfizzle/Cuisine-Compass-Group-Project",
+    // },
   ];
 
   return (
