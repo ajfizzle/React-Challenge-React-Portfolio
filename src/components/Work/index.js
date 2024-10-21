@@ -50,13 +50,6 @@ function Work() {
         "Cuisine Compass is an innovative MERN stack application designed to connect food enthusiasts with a wide array of culinary experiences. It features user authentication, personalized recommendations based on user preferences, and interactive maps to explore local eateries. The platform facilitates live Q&A sessions with culinary experts and enables optional donations to support local businesses.",
       link: "https://github.com/ajfizzle/Cuisine-Compass-Group-Project",
     },
-    // {
-    //   title: "Cuisine Compass - Group Project",
-    //   imageUrl: cuisineCompassImage,
-    //   description:
-    //     "Cuisine Compass is an innovative MERN stack application designed to connect food enthusiasts with a wide array of culinary experiences. It features user authentication, personalized recommendations based on user preferences, and interactive maps to explore local eateries. The platform facilitates live Q&A sessions with culinary experts and enables optional donations to support local businesses.",
-    //   link: "https://github.com/ajfizzle/Cuisine-Compass-Group-Project",
-    // },
   ];
 
   return (
