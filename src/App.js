@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Header from "./components/Header/index.js";
 import About from "./components/About/index.js";
 import Contact from "./components/Contact/index.js";
@@ -6,42 +6,18 @@ import Work from "./components/Work/index.js";
 import Resume from "./components/Resume/index.js";
 import Footer from "./components/Footer/index.js";
 import { Helmet } from "react-helmet";
-import ReactGA from "react-ga4";
+import ErrorBoundary from "./components/ErrorBoundary.js";
 import "./App.css";
 
 function App() {
-  // Initialize Google Analytics
-  useEffect(() => {
-    // Initialize GA4 with your tracking ID
-    ReactGA.initialize("G-32C5Z8N00K");
-
-    // Send a pageview event
-    ReactGA.send({
-      hitType: "pageview",
-      page: window.location.pathname + window.location.search,
-    });
-  }, []);
-
-  // Initialize currentTab with an object that includes a 'name' property
   const [currentTab, setCurrentTab] = useState({ name: "About" });
 
-  // Log initial state
-  console.log("Initial currentTab:", currentTab);
-
-  // Function to handle tab change
   const handleTabChange = (tabName) => {
-    console.log("Changing tab from:", currentTab.name, "to:", tabName); // Log tab change
     setCurrentTab({ name: tabName });
-    // Log the new pageview to Google Analytics
-    ReactGA.send("pageview", { page: tabName });
   };
 
-  // Render the appropriate component based on currentTab.name
   const renderTab = () => {
-    console.log("Rendering tab:", currentTab.name); // Log which tab is being rendered
-    switch (
-      currentTab.name // Ensure you use currentTab.name to match string values
-    ) {
+    switch (currentTab.name) {
       case "About":
         return <About />;
       case "Contact":
@@ -51,18 +27,21 @@ function App() {
       case "Resume":
         return <Resume />;
       default:
-        console.log("Defaulting to About tab"); // Log default case
-        return <About />; // Default to 'About' component if no match
+        return <About />;
     }
   };
 
   return (
     <>
       <Helmet>
-        <title>Joel Azetas Portfolio | {currentTab.name}</title>
+        <title>Joel Azeta's Portfolio | {currentTab.name}</title>
       </Helmet>
-      <Header currentTab={currentTab.name} handleTabChange={handleTabChange} />{" "}
-      {/* Pass down the name for consistency */}
+      <ErrorBoundary>
+        <Header
+          currentTab={currentTab.name}
+          handleTabChange={handleTabChange}
+        />
+      </ErrorBoundary>
       <main>{renderTab()}</main>
       <Footer />
     </>
