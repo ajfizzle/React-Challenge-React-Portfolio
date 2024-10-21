@@ -6,16 +6,16 @@ import Work from "./components/Work/index.js";
 import Resume from "./components/Resume/index.js";
 import Footer from "./components/Footer/index.js";
 import { Helmet } from "react-helmet";
-import ReactGA from "react-ga"; // Import react-ga
+import ReactGA from "react-ga4";
 import "./App.css";
 
 function App() {
   // Initialize Google Analytics
   useEffect(() => {
-    // Initialize Google Analytics with your tracking ID
+    // Initialize Google Analytics with your tracking ID for GA4
     ReactGA.initialize("G-32C5Z8N00K");
     // Record a pageview for the initial page load
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.send("pageview");
   }, []);
 
   // Initialize currentTab with an object that includes a 'name' property
@@ -29,7 +29,7 @@ function App() {
     console.log("Changing tab from:", currentTab.name, "to:", tabName); // Log tab change
     setCurrentTab({ name: tabName });
     // Log the new pageview to Google Analytics
-    ReactGA.pageview(tabName);
+    ReactGA.send("pageview", { page: tabName });
   };
 
   // Render the appropriate component based on currentTab.name
