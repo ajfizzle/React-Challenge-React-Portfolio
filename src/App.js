@@ -12,10 +12,14 @@ import "./App.css";
 function App() {
   // Initialize Google Analytics
   useEffect(() => {
-    // Initialize Google Analytics with your tracking ID for GA4
+    // Initialize GA4 with your tracking ID
     ReactGA.initialize("G-32C5Z8N00K");
-    // Record a pageview for the initial page load
-    ReactGA.send("pageview");
+
+    // Send a pageview event
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+    });
   }, []);
 
   // Initialize currentTab with an object that includes a 'name' property
