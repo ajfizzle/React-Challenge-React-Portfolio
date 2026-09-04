@@ -12,6 +12,7 @@ function Contact() {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+
     switch (name) {
       case "email":
         setEmail(value);
@@ -25,39 +26,49 @@ function Contact() {
       default:
         break;
     }
-    // Clear error message whenever any input is modified
+
     if (errorMessage) setErrorMessage("");
   };
 
   const handleFormSubmit = (e) => {
-    e.preventDefault();
-
     if (!validateEmail(email)) {
+      e.preventDefault();
       setErrorMessage("Please enter a valid email address.");
       return;
     }
+
     if (!userName.trim()) {
+      e.preventDefault();
       setErrorMessage("Name is required.");
       return;
     }
+
     if (!message.trim()) {
+      e.preventDefault();
       setErrorMessage("Message is required.");
       return;
     }
 
-    // Clear form inputs on successful submission
-    setUserName("");
-    setEmail("");
-    setMessage("");
-    setErrorMessage(""); // Also clear any error messages
+    // IMPORTANT:
+    // Do NOT call e.preventDefault() here.
+    // Let Netlify receive the form submission.
   };
 
   return (
     <section id="contact-me">
       <div className="section-container">
         <h2 className="section-title">Contact Me</h2>
+
         <div className="section-border">
-          <form onSubmit={handleFormSubmit}>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            onSubmit={handleFormSubmit}
+          >
+            {/* Required by Netlify Forms */}
+            <input type="hidden" name="form-name" value="contact" />
+
             <div className="form-group">
               <label htmlFor="email">Email:</label>
               <input
@@ -69,6 +80,7 @@ function Contact() {
                 required
               />
             </div>
+
             <div className="form-group">
               <label htmlFor="userName">Name:</label>
               <input
@@ -80,6 +92,7 @@ function Contact() {
                 required
               />
             </div>
+
             <div className="form-group">
               <label htmlFor="message">Message:</label>
               <textarea
@@ -90,9 +103,14 @@ function Contact() {
                 required
               />
             </div>
-            {errorMessage && <p className="error-message">{errorMessage}</p>}
+
+            {errorMessage && (
+              <p className="error-message">{errorMessage}</p>
+            )}
+
             <button type="submit">Submit</button>
           </form>
+
           <div className="nav">
             <address>
               <a href="tel:832-600-4472">
@@ -100,11 +118,13 @@ function Contact() {
                 <span className="sr-only">Phone</span>
               </a>
             </address>
+
             <address>
               <a href="mailto:ajfizzle310@outlook.com">
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
             </address>
+
             <address>
               <a
                 href="https://github.com/ajfizzle"
@@ -114,6 +134,7 @@ function Contact() {
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </address>
+
             <address>
               <a
                 href="https://www.linkedin.com/in/isikhuemwen-azeta-959bb221/"

@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Portfolio website created using create-react-app"
+      content="Joel Azeta's Portfolio"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/react-logo.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -20,6 +20,7 @@
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
           dl = l != "dataLayer" ? "&l=" + l : "";
+
         j.async = true;
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
@@ -42,7 +43,26 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <noscript>You need to enable JavaScript to view this app.</noscript>
+    <noscript>
+      You need to enable JavaScript to view this app.
+    </noscript>
+
+    <!--
+      Hidden Netlify form used so Netlify can detect the form
+      during the Create React App build.
+    -->
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="email" name="email" />
+      <input type="text" name="userName" />
+      <textarea name="message"></textarea>
+    </form>
+
     <div id="root"></div>
   </body>
 </html>
