@@ -67,7 +67,7 @@ z-index: 1000;
 }
 
 header h1 {
-font-size: 2rem;
+font-size: 1.4rem;
 margin: 0;
 }
 
@@ -110,7 +110,7 @@ padding: 2rem;
 
 .hero h2 {
 color: white;
-margin: 0;
+margin: -36px;
 }
 
 /* ==========================
@@ -249,8 +249,8 @@ min-height: 250px;
 }
 
 .button {
-width: 12%;
-padding: 0.75rem;
+width: 32%;
+padding: 0.30rem;
 border: none;
 border-radius: 5px;
 background: #007bff;
@@ -312,7 +312,7 @@ padding: 1rem;
 }
 
 .footer-section h1 {
-font-size: 0.9rem;
+font-size: 0.4rem;
 }
 
 /* ==========================
@@ -330,7 +330,7 @@ height: 200px;
 }
 
 .section-title {
-font-size: 2rem;
+font-size: 1rem;
 }
 
 .resume-body {
