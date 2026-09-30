@@ -15,19 +15,19 @@ function Work() {
         "Text Editor PWA is a progressive web application that allows users to create, edit, and save text documents online. This tool is designed to be fast, reliable, and user-friendly, offering a seamless writing experience across devices. With features like offline access, automatic saving, and customizable themes, Text Editor PWA is the perfect solution for writers, students, and professionals who need a versatile text editor on the go.",
       link: "https://progressive-web-applications-challenge.onrender.com/",
     },
+        {
+      title: "Weather Dashboard",
+      imageUrl: weatherDashboardImage,
+      description:
+        "Weather Dashboard offers real-time weather updates and forecasts for cities worldwide. Utilizing OpenWeather API, it provides detailed information on temperature, humidity, wind speed, and more. This tool is indispensable for planning daily activities and trips, offering both current conditions and five-day forecasts to keep users well-prepared for any weather.",
+      link: "https://ajfizzle.github.io/Server-Side-APIs-Challenge",
+    },
     {
       title: "Employee Payroll Tracker",
       imageUrl: employeePayrollTrackerImage,
       description:
         "Employee Payroll Tracker is a robust web application designed to streamline the management of employee salaries and working hours for businesses of all sizes. Utilizing technologies like Node.js and MongoDB, this tool allows employers to effortlessly input, update, and track payroll data in real-time. Features include automatic calculations of wages based on hourly rates, generation of comprehensive payroll reports, and the ability to handle adjustments for overtime and deductions. This application ensures accuracy and efficiency in payroll management, making it an essential tool for HR departments.",
       link: "https://ajfizzle.github.io/employee-payroll-tracker/",
-    },
-    {
-      title: "Weather Dashboard",
-      imageUrl: weatherDashboardImage,
-      description:
-        "Weather Dashboard offers real-time weather updates and forecasts for cities worldwide. Utilizing OpenWeather API, it provides detailed information on temperature, humidity, wind speed, and more. This tool is indispensable for planning daily activities and trips, offering both current conditions and five-day forecasts to keep users well-prepared for any weather.",
-      link: "https://ajfizzle.github.io/Server-Side-APIs-Challenge",
     },
     {
       title: "My First Blog",
@@ -53,7 +53,6 @@ function Work() {
   ];
 
   return (
-    <div>
       <section id="work">
         <div className="section-container">
           <h2 className="section-title">Work</h2>
@@ -83,7 +82,6 @@ function Work() {
           </div>
         </div>
       </section>
-    </div>
   );
 }
 

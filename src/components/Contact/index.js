@@ -210,8 +210,9 @@ function Contact() {
 
             <button
               type="submit"
+              className="button"
               disabled={isSubmitting}
-            >
+    >
               {isSubmitting ? "Sending..." : "Submit"}
             </button>
           </form>

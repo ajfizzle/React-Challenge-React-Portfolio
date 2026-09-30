@@ -13,14 +13,14 @@ function Resume() {
         <h2 className="section-title primary-border">
           <a
             href={myResume}
-            download="Isikhuemwen Joel Azeta.pdf"
+            download="Azeta Joel Isikhuemwen - Resume.pdf"
             className="download-link"
           >
             My Resume <GrDownload />
           </a>
         </h2>
         <p>
-          Here are a list of technologies and tools acquired during my coding bootcamp journey:
+          Below is a list of technologies, frameworks and tools I gained experience with throughout my coding bootcamp journey:
         </p>
       </section>
 
