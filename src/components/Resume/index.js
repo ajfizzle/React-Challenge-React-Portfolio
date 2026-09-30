@@ -20,7 +20,7 @@ function Resume() {
           </a>
         </h2>
         <p>
-          Technologies and tools acquired during my coding bootcamp journey:
+          Here are a list of technologies and tools acquired during my coding bootcamp journey:
         </p>
       </section>
 
