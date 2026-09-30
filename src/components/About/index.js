@@ -8,26 +8,21 @@ function About() {
         <div className="section-border">
           <article>
             <div className="about-text">
-              <p>
-                I'm a passionate problem-solver with a diverse background in the
-                world of technology. My journey began as a traditional deskside
-                support which I transitioned to Application Support, where I
-                honed my skills in troubleshooting, diagnosing, and resolving
-                complex technical issues. I thrived in fast-paced environments,
-                providing exceptional support to users of all technical levels.
-              </p>
-              <p>
-                I constantly seek to learn and explore new technologies, staying
-                abreast of the latest trends and advancements. I believe in the
-                power of teamwork and leverage diverse perspectives to achieve
-                optimal solutions.
-              </p>
-              <p>
-                While my professional life revolves around technology, I believe
-                in maintaining a healthy balance by enjoying activities such as
-                cooking, watching soccer, football, hiking, biking and movies,
-                and spending time with my spouse and our wonderful kids.
-              </p>
+            <p>
+             I'm a passionate problem-solver with a diverse background in technology. My journey began in traditional deskside support before
+             transitioning into application support where I honed my skills in troubleshooting, diagnosing and resolving complex technical issues.
+             I thrive in fast-paced environments and enjoy providing exceptional support to users of all technical and non-technical levels.
+            </p>
+            <p>
+             I am constantly seeking opportunities to learn and explore new technologies, staying abreast with the latest trends 
+             and advancements in the industry. I believe in the power of teamwork and value diverse perspectives when solving problems 
+             and delivering solutions.
+            </p>
+            <p>
+             While my professional life revolves around technology, I believe in maintaining a healthy work-life balance.
+              Outside of work, I enjoy cooking, watching soccer and football, hiking, biking, watching movies 
+              and spending quality time with my spouse and our wonderful kids.
+            </p>
             </div>
           </article>
         </div>

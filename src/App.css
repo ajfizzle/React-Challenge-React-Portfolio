@@ -1,10 +1,10 @@
 /* Reset styles */
 * {
   box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-  flex-wrap: wrap; /* Allow flex items to wrap */
+  /* flex-wrap: wrap; Allow flex items to wrap */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-  font-size: 29px; /* Set default font size */
+  /* font-size: 29px; Set default font size */
 }
 
 /* Body and HTML styles */
@@ -51,7 +51,10 @@ header {
 
 /* About text styles */
 .about-text {
-  font-size: 20px; /* Font size for about text */
+max-width: 100%;
+line-height: 1.3;
+text-align: justify;
+font-size: 31px;
 }
 
 /* Header link hover styles */
@@ -124,7 +127,7 @@ a.nav-link {
   background: #f9f9f9; /* Background color */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Shadow */
-  padding-left: 10px; /* Padding to the left */
+  /* padding-left: 10px; -> Padding to the left */
 }
 
 /* Textarea styles */
@@ -264,10 +267,10 @@ textarea {
 /* Section border styles (duplicate) */
 .section-border {
   margin: 1%; /* Margin */
-  padding-left: 50px; /* Padding to the left */
+  padding-left: 84px; /* Padding to the left - changed from 50 to 84 */
   padding-bottom: 20px; /* Padding at the bottom */
   flex: 0 0 85%; /* Flex properties */
-  left: 300px; /* Position from the left */
+  /*left: 300px; -> Position from the left */
 }
 
 /* Work header styles */
@@ -288,7 +291,7 @@ p {
   background-color: transparent; /* Transparent background */
   margin: 21px; /* Margin */
   padding: 0px; /* No padding */
-  margin-left: 60px;
+  margin-left: 0px;
 }
 
 /* Nested section container styles */

@@ -13,6 +13,7 @@ import {
 function Contact() {
   const [email, setEmail] = useState("");
   const [userName, setUserName] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
@@ -29,6 +30,10 @@ function Contact() {
       case "userName":
         setUserName(value);
         break;
+
+      case "subject":
+      setSubject(value);
+      break;
 
       case "message":
         setMessage(value);
@@ -67,6 +72,12 @@ function Contact() {
       return;
     }
 
+    // Validate subject
+    if (!subject.trim()) {
+      setErrorMessage("Subject is required.");
+      return;
+    }
+
     // Validate message
     if (!message.trim()) {
       setErrorMessage("Message is required.");
@@ -96,6 +107,7 @@ function Contact() {
       // Clear form after successful submission
       setUserName("");
       setEmail("");
+      setSubject("");
       setMessage("");
 
       setSuccessMessage(
@@ -152,6 +164,19 @@ function Contact() {
                 id="userName"
                 name="userName"
                 value={userName}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+
+                        <div className="form-group">
+              <label htmlFor="subject">Subject:</label>
+
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={subject}
                 onChange={handleInputChange}
                 required
               />
