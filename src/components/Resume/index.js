@@ -5,7 +5,7 @@ import {
   GrDocumentPerformance,
   GrDownload,
 } from "react-icons/gr";
-import myResume from "../../assets/files/Azeta Joel Isikhuemwen - Resume.docx";
+import myResume from "../../assets/files/Azeta Joel Isikhuemwen - Resume.pdf";
 function Resume() {
   return (
     <div>
@@ -13,7 +13,7 @@ function Resume() {
         <h2 className="section-title primary-border">
           <a
             href={myResume}
-            download="Isikhuemwen Joel Azeta.docx"
+            download="Isikhuemwen Joel Azeta.pdf"
             className="download-link"
           >
             My Resume <GrDownload />
