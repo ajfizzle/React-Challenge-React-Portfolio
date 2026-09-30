@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f059c32.css",
-    "main.js": "/static/js/main.f66cce60.js",
+    "main.css": "/static/css/main.42d004b5.css",
+    "main.js": "/static/js/main.de8c99f6.js",
     "static/js/488.0a19d74b.chunk.js": "/static/js/488.0a19d74b.chunk.js",
     "static/media/weatherdashboard-app.png": "/static/media/weatherdashboard-app.16cee2c9d9acdd21d068.png",
     "static/media/plantcare-app.png": "/static/media/plantcare-app.8a63730cf0f660058669.png",
     "static/media/Image-1.png": "/static/media/Image-1.2e7f9351936d1a0327ef.png",
-    "static/media/Isikhuemwen Joel Azeta - Resume.pdf": "/static/media/Isikhuemwen Joel Azeta - Resume.b3621ee73a8e2d587cc4.pdf",
     "static/media/texteditor-pwa.png": "/static/media/texteditor-pwa.9c100a19db6b774f1d90.png",
+    "static/media/Azeta Joel Isikhuemwen - Resume.docx": "/static/media/Azeta Joel Isikhuemwen - Resume.d64201bcd6eeb36b04c7.docx",
     "static/media/first-blog.png": "/static/media/first-blog.b1786334aa0a3e2260a8.png",
     "static/media/employee-payroll-tracker.png": "/static/media/employee-payroll-tracker.69437a14f42cffe5bac9.png",
     "index.html": "/index.html",
-    "main.2f059c32.css.map": "/static/css/main.2f059c32.css.map",
-    "main.f66cce60.js.map": "/static/js/main.f66cce60.js.map",
+    "main.42d004b5.css.map": "/static/css/main.42d004b5.css.map",
+    "main.de8c99f6.js.map": "/static/js/main.de8c99f6.js.map",
     "488.0a19d74b.chunk.js.map": "/static/js/488.0a19d74b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f059c32.css",
-    "static/js/main.f66cce60.js"
+    "static/css/main.42d004b5.css",
+    "static/js/main.de8c99f6.js"
   ]
 }
