@@ -125,7 +125,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact-me">
+    <section id="Contact-Me">
       <div className="section-container">
         <h2 className="section-title">Contact Me</h2>
 

@@ -10,7 +10,7 @@ function Nav(props) {
     document.title = capitalizeFirstLetter(currentTab.name);
   }, [currentTab]);
 
-  return (
+return (
     <nav className="nav nav-tabs">
       <li className="nav-item">
         <a
@@ -23,20 +23,11 @@ function Nav(props) {
       </li>
       <li className="nav-item">
         <a
-          href="#work"
+          href="#bootcamp-projects"
           onClick={() => handleTabChange("Work")}
           className={currentTab === "Work" ? "nav-link active" : "nav-link"}
         >
-          Work
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#contact"
-          onClick={() => handleTabChange("Contact")}
-          className={currentTab === "Contact" ? "nav-link active" : "nav-link"}
-        >
-          Contact Me
+          Bootcamp Projects
         </a>
       </li>
       <li className="nav-item">
@@ -46,6 +37,15 @@ function Nav(props) {
           className={currentTab === "Resume" ? "nav-link active" : "nav-link"}
         >
           Resume
+        </a>
+      </li>
+            <li className="nav-item">
+        <a
+          href="#contact"
+          onClick={() => handleTabChange("Contact")}
+          className={currentTab === "Contact" ? "nav-link active" : "nav-link"}
+        >
+          Contact Me
         </a>
       </li>
     </nav>

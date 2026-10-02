@@ -38,7 +38,7 @@ line-height: 1.6;
 }
 
 /* ==========================
-LINKS
+LINKS / RESUME
 ========================== */
 
 a {
@@ -54,6 +54,36 @@ color: rgba(1, 7, 10, 0.89);
 color: black;
 }
 
+.resume-header {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+/* margin-bottom: 2rem; */
+}
+
+.stack-intro {
+flex: 1;
+}
+
+.resume-download {
+text-align: left;
+/* min-width: 250px; */
+}
+
+.resume-download h3 {
+margin-bottom: 10px;
+}
+
+.download-link {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+padding: 10px 16px;
+/* border: 1px solid #007bff; */
+border-radius: 6px;
+color: #007bff;
+font-weight: bold;
+}
 /* ==========================
 HEADER
 ========================== */
@@ -118,7 +148,7 @@ SECTIONS
 ========================== */
 
 section {
-padding: 2rem;
+padding: 1rem;
 }
 
 .section-container {

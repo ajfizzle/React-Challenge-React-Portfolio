@@ -9,20 +9,30 @@ import myResume from "../../assets/files/Azeta Joel Isikhuemwen - Resume.pdf";
 function Resume() {
   return (
     <div>
-      <section id="Resume" className="download-intro">
-        <h2 className="section-title primary-border">
-          <a
-            href={myResume}
-            download="Azeta Joel Isikhuemwen - Resume.pdf"
-            className="download-link"
-          >
-            My Resume <GrDownload />
-          </a>
-        </h2>
-        <p>
-          Below is a list of technologies, frameworks and tools I gained experience with throughout my coding bootcamp journey:
-        </p>
-      </section>
+<section id="Resume" className="download-intro">
+
+<div className="resume-header">
+
+<div className="stack-intro">
+<h2 className="section-title">Tech Stack</h2>
+
+<p>
+Below is a collection of technologies, frameworks, and tools I gained experience with throughout my coding bootcamp journey and hands-on development projects.
+</p>
+</div>
+
+<div className="resume-download">
+<a href={myResume} 
+download="Azeta Joel Isikhuemwen - Resume.pdf"
+className="download-link"
+> 
+<GrDownload /><h4>Professional Resume</h4> 
+</a>
+</div>
+
+</div>
+
+</section>
 
       <section id="home-page-body" className="resume-body">
         <div className="article column1">

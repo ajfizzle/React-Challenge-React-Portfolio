@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bad5870b.css",
-    "main.js": "/static/js/main.91f6784d.js",
+    "main.css": "/static/css/main.3cf4e8b8.css",
+    "main.js": "/static/js/main.d00dac4f.js",
     "static/js/488.0a19d74b.chunk.js": "/static/js/488.0a19d74b.chunk.js",
     "static/media/weatherdashboard-app.png": "/static/media/weatherdashboard-app.16cee2c9d9acdd21d068.png",
     "static/media/plantcare-app.png": "/static/media/plantcare-app.8a63730cf0f660058669.png",
@@ -11,12 +11,12 @@
     "static/media/first-blog.png": "/static/media/first-blog.b1786334aa0a3e2260a8.png",
     "static/media/employee-payroll-tracker.png": "/static/media/employee-payroll-tracker.69437a14f42cffe5bac9.png",
     "index.html": "/index.html",
-    "main.bad5870b.css.map": "/static/css/main.bad5870b.css.map",
-    "main.91f6784d.js.map": "/static/js/main.91f6784d.js.map",
+    "main.3cf4e8b8.css.map": "/static/css/main.3cf4e8b8.css.map",
+    "main.d00dac4f.js.map": "/static/js/main.d00dac4f.js.map",
     "488.0a19d74b.chunk.js.map": "/static/js/488.0a19d74b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bad5870b.css",
-    "static/js/main.91f6784d.js"
+    "static/css/main.3cf4e8b8.css",
+    "static/js/main.d00dac4f.js"
   ]
 }
