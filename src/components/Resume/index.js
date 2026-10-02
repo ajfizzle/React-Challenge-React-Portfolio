@@ -9,7 +9,7 @@ import myResume from "../../assets/files/Azeta Joel Isikhuemwen - Resume.pdf";
 function Resume() {
   return (
     <div>
-      <section id="welcome-section" className="download-intro">
+      <section id="Resume" className="download-intro">
         <h2 className="section-title primary-border">
           <a
             href={myResume}
