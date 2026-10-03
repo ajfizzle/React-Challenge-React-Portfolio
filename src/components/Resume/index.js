@@ -14,24 +14,21 @@ function Resume() {
 <div className="resume-header">
 
 <div className="stack-intro">
-<h2 className="section-title">Tech Stack</h2>
-
-<p>
-Below is a collection of technologies, frameworks, and tools I gained experience with throughout my coding bootcamp journey and hands-on development projects.
-</p>
+    <h2 className="section-title">Tech Stack</h2>
 </div>
 
 <div className="resume-download">
-<a href={myResume} 
-download="Azeta Joel Isikhuemwen - Resume.pdf"
-className="download-link"
-> 
-<GrDownload /><h4>Professional Resume</h4> 
+  <a href={myResume} download="Azeta Joel Isikhuemwen - Resume.pdf"
+className="download-link"> 
+<GrDownload /> Professional Resume 
 </a>
 </div>
 
 </div>
-
+<p className="stack-description">
+Below is a collection of technologies, frameworks and tools I explored and applied throughout my coding bootcamp journey.
+Hands-on projects gave me the opportunity to strengthen my development skills, solve practical challenges and gain experience designing, building, testing and troubleshooting front-end and back-end applications.
+</p>
 </section>
 
       <section id="home-page-body" className="resume-body">
